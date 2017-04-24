@@ -1,0 +1,1 @@
+open the .pde file and click 'Run' to display the image. A key must be pressed for an image to be displayed if no key is pressed is will simply display the background.

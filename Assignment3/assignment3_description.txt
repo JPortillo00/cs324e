@@ -1,0 +1,1 @@
+The extract_words.py uses various for loops in order to read and write each of the necessary files. The a3_wordfrequency.pde uses arrays and string to read and create distribution of the unique word. I was able to complete the extract_words.py and a3_wordfrequency.pde with Seans assistance. 

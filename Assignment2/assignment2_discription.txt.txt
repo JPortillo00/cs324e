@@ -1,0 +1,6 @@
+Pressing 0 returns the original image.
+Pressing 1 returns a grayscale of the image
+Pressing 2 returns a black/white contrast.
+Pressing 3 returns a Gaussian blur.
+Pressing 4 returns a edge detection.
+Any other key defaults to the original image.

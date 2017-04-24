@@ -1,0 +1,7 @@
+This program uses spheres and boxes in order for a colorful display of various periodic orbits.
+
+CustomCube class was Sean's class that drew his own cubes at certian input coordinates and rotates those said cubes. OrbitingCubes class is Sean's class the places and causes the CustonCube to orbit. 
+
+Orb class class is Shrineil's class creates a sphere that simply rotates the sphere
+
+OrbitingSphere class is Jairo's class that center point(an omitted sphere) with eight smaller spheres the orbit the center point at various periods in order to prevent collision until convergence at the center.

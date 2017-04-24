@@ -1,0 +1,9 @@
+This is a rendition of the classic arcade game bubble break. The
+player shoots a variety of colored balls and when 3 match, they pop.The objective is to remove all the 
+bubbles on the screen. You lose when the un-popped bubbles reach the bottom of the screen. There is sfx for popping
+as well as a background track of the mortal combat theme song. Menu implementation was from Jairo, the game logic and 
+functionality primarily came from Sean, and Shrineil did the sfx and sound. Sound implementation was difficult due to 
+volume control issues with the minim library as well as beads. The default library was used as it was much 
+easier to implement. The menu was also a bit finicky and getting it to stay one screen through the games framerate was
+difficult. The logic of the game used a grid to detect hits as well as a six point system to test connections. The 
+code was slightly inneffiecient but overall a smooth experience.

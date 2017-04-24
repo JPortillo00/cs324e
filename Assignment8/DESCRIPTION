@@ -1,0 +1,3 @@
+Part 1 utilizes the data of Yahoo finance data of google stocks since its creation. The graph plots monthly closures from is creation until now. Going over the graph one can view the information of the data points. 
+
+Part 3 displays the RSS of feeds of World, Arts, Science, Tech, and Politics from BBC news. Clicking the tabs will switch the RSS feeds between each topic. Headlines have various interactions with the mouse.  Part 2 is a display of the Los Angeles population distributuon by median age, household size, and total population via zip code accodring to thw 2010 census. The camera is mostly free and allows one to explore the data and observe general trends. The line connects the zip codes in order from lowest number to highest number. 

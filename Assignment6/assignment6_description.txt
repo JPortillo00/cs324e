@@ -1,0 +1,52 @@
+This is a simple simulation of a quantum computer.
+The code includes functionality for many different operations.
+The presented interactive component is just one particular case, which applies the two qubit quantum Fourier transformation to a given classical input state.
+
+The classes, other than the main class which runs everything, are
+C - a simple implementation of a complex number
+QGate - holds a quantum gate as a complex valued matrix which can act on other quantum gates and states, and includes tensor operations
+QState - holds a quantum state as a complex linear combination of basis states
+Qswitch - a pair of switches which sets the quantum state
+
+There are two buttons included which toggle the pure states of the two qubits between |0> and |1>, the classical basis states.
+Together these two buttons give the states |00>, |01>, |10>, and |11>.
+These four states are represented graphically as red rectangles in the first column of the output below the buttons.
+Pressing the buttons will update the simulation to run the quantum computer again applied to the new input.
+The intermediate states after each quantum logic gate are given by each column.
+The final state is the rightmost column, again a linear combination of the four basis states.
+
+The brightness of the rectangles represents the magnitude of the complex number coefficient on that state.
+The hue represents the phase (or angle in the complex plane), so that a red square is positive real, cyan is negative real, and for example green is pure imaginary.
+
+In reality, quantum states are complex (that is, with both real and imaginary parts) linear combinations of the basis states.
+If there are n qubits, then there are 2^n different basis states, which means that there are 2^n different complex variables which can be freely manipulated, with the only restriction being that the total magnitude of all of the basis states is equal to 1. 
+This is essentially the condition that the state is a probability distribution, and while when measured, the complex states collapse into real states with actual values, the complex values can still undergo constructive or destructive interference, which is a huge advantage in computation.
+This property of quantum states leads to superpositions (linear combinations of states, whereas classical states can only be in one state at a time),
+as well as entanglement (when there are correlations in probability between states which would be impossible classically).
+
+The simulation given here, the quantum Fourier transform, gives the repeating component of a quantum state.
+This is similar to the classical Fourier transform, which breaks a waveform into simple sine and cosine waves of particular amplitude and frequency.
+The quantum Fourier transformation on two qubits is not especially useful, but it is a proof of concept for applying it to a larger number of qubits.
+The quantum Fourier transform is a key step in Shor's algorithm, which is one particularly important quantum algorithm because it can break RSA by factoring numbers far more quickly than a classical computer.
+Experimentally, quantum computing is not far enough to apply this to very large numbers, but it will be within a decade or two, if research continues.
+
+It was the intention to have all possible input states rather than just the classical ones, but decided that it would make the interactivity too complicated.
+It was also the intention to have the quantum gates be configurable to see what possible outputs could be made by changing them, but there are so many possibilities that it would be difficult to do this in a graphical interface.
+
+Instead, there are some sections of code which are commented or unused which can be used for many other possible simulated quantum computations.
+There are a large number of quantum gates which are made via tensor products of simpler quantum gates, such as the Pauli matrices and the Hadamard gate.
+There are also gates like the CNOT (controlled not) and TONC (the same thing but reversed) gates which are applicable to creating entangled states.
+They were also used in the quantum Fourier transform implementation.
+
+There are also some sections of code which correspond to other demonstrations, but uncommenting them and commenting parts of what was uncommented before is too much to ask a user, so we opted to have a simple interactive simulation which perhaps doesn't have as much content as the program itself.
+
+Included in the program are a simple one-qubit phase reversal demonstration and a quantum Fourier transform on two qubits (which is what is here by default),
+as well a few demonstrations which render the quantum gate itself (which is a matrix that acts on the quantum state), including one which randomly multiplies gates.
+
+In this case, the simulation is only two qubits, but this is designed to be easily scaled up, at the cost of exponentially increasing processing power.
+However, that's the problem with simulating a quantum computer on a classical computer, so that's expected.
+
+Group credits
+Sean - The quantum gate implementation.
+Jairo - The buttons and states.
+Shrineil - Rendering and ideas.

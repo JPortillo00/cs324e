@@ -1,0 +1,5 @@
+Project description
+
+The intended animation was a recreation of the hypnotoad charachter from Futurama. The included classes are responsible for dynamic eyes(Shrineil Patel), streaking colors(Jairo Portillo Jr.), and morphing stars(Sean O'Neal), all of which have random elements.
+The eyes had a few difficulties in controlling the range of pupil motion through altering a bezier curve. Through trial and error the current balance was chosen. 
+There were some problems with colors shifting innappropriately, but instancing a fill command along with a colormode set to RGB fixed it.
